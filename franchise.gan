@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Franchise Gantt" company="" webLink="http://" view-date="2024-09-28" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.3.3309" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="200" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="75" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="8" uid="f5216dbe69f54d9d99d33d74d8506e5b" name="Recherche d'un local" meeting="false" start="2024-12-02" duration="50" complete="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" uid="f02f9293b5b04ce3b374a39bc7e9b639" name="Recherche d'un franchisé" meeting="false" start="2024-09-30" duration="45" complete="0" expand="true">
+            <depend id="0" type="2" difference="0" hardness="Strong"/>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" uid="029339d2fad64392865463cf7df94cc5" name="Constitution du dossier Chambre du Commerce" meeting="false" start="2024-09-16" duration="10" complete="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="33cd314a58554dbb9f32324198f283f9" name="Constitution du dossier du franchisé" meeting="false" start="2024-12-02" duration="15" complete="0" expand="true">
+            <depend id="0" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" uid="7d8d586a1b8841c8abf518ab437bcdd5" name="Formation du franchisé" meeting="false" start="2024-12-23" duration="30" complete="0" expand="true"/>
+        <task id="6" uid="189f3f031f36457384bf57727a903ba0" name="Aménagement, plâtrerie, peinture du magasin" meeting="false" start="2025-02-18" duration="20" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="dd244a580ab046058f6ef0822caee5ed" name="Réfection façade et enseigne" meeting="false" start="2025-03-18" duration="8" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="eff4d0219f7845a08f3a11787d1891ef" name="Equipement rayonnage" meeting="false" start="2025-03-28" duration="5" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" uid="c28b22a41c5b429a95c98a69803f86db" name="Equipement de la chambre froide" meeting="false" start="2025-03-28" duration="8" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" uid="e8dc2d394ff14c49a0eef4d68477ff8f" name="Implantation du magasin" meeting="false" start="2025-02-10" duration="6" complete="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="e12a538b041a40f68a8afa3164e59628" name="Tirage des flyers publicitaires" meeting="false" start="2025-04-09" duration="6" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="c96754c170e3484e88c8e01d4d6a1679" name="Distribution de flyers" meeting="false" start="2025-04-17" duration="2" complete="0" expand="true"/>
+        <task id="14" uid="b4b558b96bc54c518198ee5947f9323d" name="Envoi des invitations pour l'inauguration" meeting="false" start="2025-04-09" duration="6" complete="0" expand="true"/>
+        <task id="3" uid="975cc3c3a76c4d22bfe88926d8343875" name="Inauguration du magasin" meeting="false" start="2025-04-09" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
